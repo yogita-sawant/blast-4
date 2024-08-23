@@ -1,0 +1,45 @@
+.brand-img {
+    width: 168px;
+}
+
+.brand-grid-container {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 3rem;
+    width: 80%;
+}
+
+.brand-grid-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-des {
+    border-left: 1px solid rgb(64 72 51 / 1);
+    width: 100%;
+}
+
+@media (min-width: 300px)and (max-width: 1027px) {
+
+    .brand-grid-container {
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+        width: 100%;
+    }
+
+    .brand-img {
+        width: 120px;
+    }
+
+    .brand-des {
+        font-size: 16px;
+        padding-left: 1rem;
+        border-left: none;
+        text-align: start;
+    }
+}

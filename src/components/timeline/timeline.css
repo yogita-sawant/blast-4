@@ -1,0 +1,111 @@
+.highlight-text {
+    color: rgb(252 252 3 / 1);
+}
+
+.timeline-sub-des {
+    margin: 0;
+    color: rgb(252 253 199/ 1);
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: 'Geom';
+    width: 80%;
+}
+
+.timeline-img {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-1,
+.img-2 {
+    width: 100%;
+    height: auto;
+}
+
+.img-2 {
+    max-width: 384px;
+    display: none;
+}
+
+.invite-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: -0.5rem;
+    background-color: rgb(17 20 12/1);
+}
+
+.invite-btn {
+    background-color: rgb(252 252 3/1);
+    clip-path: polygon(20px 0, 100% 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 0 50%);
+    color: rgb(0 0 0/1);
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-top-right-radius: .375rem;
+    border-bottom-left-radius: .375rem;
+    font-family: 'Geom';
+    border: none;
+    width: 100%;
+    min-height: 40px;
+}
+
+.invite-link {
+    color: rgb(155 168 133 / 1);
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: 'Geom';
+    margin-bottom: 1rem;
+}
+
+.invite-svg-1 {
+    display: flex;
+}
+
+.invite-svg-2 {
+    display: flex;
+
+}
+
+@media (min-width: 300px)and (max-width: 1027px) {
+    .timeline-sub-des {
+        width: 100%;
+    }
+
+    .img-1 {
+        display: none;
+    }
+
+    .img-2 {
+        display: block;
+    }
+
+    .invite-svg-1 {
+        display: none;
+    }
+
+    .invite-svg-2 {
+        display: none;
+
+    }
+
+    .invite-content {
+        background-color: transparent;
+    }
+}

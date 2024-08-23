@@ -1,0 +1,72 @@
+.main-content {
+    display: flex;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+    padding-top: 1.5rem;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.text-content {
+    max-width: 65ch;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.backed-by {
+    margin-top: 1rem;
+}
+
+.backed-by span {
+    color: rgb(117 131 93/1);
+    margin-bottom: 1rem;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    font-weight: 600;
+    font-family: 'Geom';
+    display: flex;
+}
+
+.logos img {
+    margin-right: 1.5rem;
+}
+
+.paradigm-img {
+    width: 176px;
+    height: 32px
+}
+
+.standard-img {
+    width: 144px;
+    height: 40px;
+}
+
+.graphic img {
+    width: 500px;
+    height: 500px;
+}
+
+@media (min-width: 300px)and (max-width: 1027px) {
+    .main-content {
+        flex-direction: column-reverse;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .graphic {
+        justify-content: center;
+        display: flex;
+    }
+
+    .graphic img {
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}

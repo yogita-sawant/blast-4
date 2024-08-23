@@ -1,0 +1,62 @@
+.work-container {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+}
+
+.work-col {
+    flex: 1;
+}
+
+.work-card {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+.work-card img {
+    max-width: 100px;
+    height: auto;
+}
+
+.work-content h3 {
+    color: rgb(252 253 199 /1);
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Geom';
+    margin: 0;
+}
+
+.work-content p {
+    margin: 1.5rem 0 0;
+    color: rgb(195 212 165 /1);
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: 'Geom';
+}
+
+.work-bottom-text {
+    text-align: center;
+    margin-top: 5rem;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: rgb(155 168 133 / 1);
+    font-family: 'Geom';
+}
+
+@media (min-width: 300px)and (max-width: 1027px) {
+
+    .work-container {
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+}

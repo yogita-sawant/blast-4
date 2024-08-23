@@ -1,0 +1,53 @@
+.graph-img {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.graph-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: -1rem;
+}
+
+.graph-content-1 {
+    width: 38%;
+    border-left: 1px solid rgb(64 72 51 / 1);
+}
+
+.graph-content-1 span {
+    display: flex;
+    color: rgb(252 253 199 /1);
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0;
+    font-weight: 400;
+    padding-left: 1.5rem;
+    font-family: 'Geom';
+}
+
+.graph-divider {
+    width: 83%;
+}
+
+@media (min-width: 300px)and (max-width: 1027px) {
+    .graph-img {
+        width: 350px;
+    }
+
+    .graph-content {
+        flex-direction: column;
+    }
+
+    .graph-content-1 {
+        width: 100%;
+    }
+
+    .graph-divider {
+        width: 100%;
+        margin-top: 0rem;
+    }
+}

@@ -1,0 +1,136 @@
+.header {
+    display: flex;
+    top: 0.6rem;
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    flex-direction: column;
+    border-top: 2px solid rgb(64 72 51 / 1);
+    z-index: 1000;
+    transition: backdrop-filter 0.3s ease-in-out;
+    backdrop-filter: blur(16px);
+}
+
+.header-content {
+    display: flex;
+    margin-top: -2rem;
+    padding-left: 7rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    color: rgb(155 168 133 / 1);
+    font-family: 'Geom';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav.open {
+    display: block;
+}
+
+.header-line-section {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.header-line {
+    flex: none;
+    height: 1.5px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.16);
+    opacity: 1;
+}
+
+.logo {
+    width: 170px;
+    height: 40px;
+}
+
+.top-left-img {
+    width: 500px;
+    top: -0.7rem;
+    position: relative;
+    left: -0.7rem;
+}
+
+.top-right-img {
+    width: 500px;
+    top: -0.85rem;
+    position: absolute;
+    right: 1.3rem;
+}
+
+@media (min-width: 300px)and (max-width: 1027px) {
+    .header-content {
+        padding-left: 1rem;
+    }
+
+    .nav-open ul {
+        flex-direction: column;
+        padding: 2rem;
+        position: absolute;
+        top: 100%;
+        right: 1.6rem;
+        left: 0;
+        align-items: start;
+        backdrop-filter: blur(12px);
+        background: transparent;
+        border: 2px solid rgb(64 72 51 / 1);
+        filter: brightness(50%);
+    }
+
+    .nav-open ul li {
+        width: 100%;
+        border-bottom: 2px solid rgb(64 72 51 / 1);
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-open ul li:last-child {
+        border-bottom: none;
+        margin-bottom: -1rem;
+        margin-top: -1rem;
+    }
+
+    .nav-close ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        right: 3rem;
+        position: absolute;
+    }
+
+    .header-line {
+        width: 100%;
+    }
+
+    .top-right-img {
+        top: -0.6rem;
+    }
+
+    .logo {
+        width: 150px;
+        height: 30px;
+        padding: 1rem;
+    }
+}
